@@ -1,0 +1,7 @@
+#Restore:
+mongorestore -v --archive=<dumpFile> /En dumpfile va la direccion donde se encuentra el dump/
+
+
+#Restore changing the name of the database:
+
+mongorestore -v --archive=<dumpFile> --nsFrom="oldName.*" --nsTo="newName.*"
