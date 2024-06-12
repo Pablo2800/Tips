@@ -1,0 +1,7 @@
+git stash save -m 'algún mensaje' # si acaso tenés cosas modificadas (no sabemos de qué estado partimos, si no, no es necesario)
+git checkoout dev
+git pull
+git checkoout -b nombre-rama-nueva # si las generamos en github, ya está, sino le ponés nombre vos, idealmente iniciando con el nombre de issue de la tarea creada en github si es que la hay
+# work work work... code code code
+git commit -p # quizá `git add nuevo-archivo` si acaso creaste alguno nuevo
+git push
